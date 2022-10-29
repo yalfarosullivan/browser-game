@@ -1,18 +1,34 @@
-// //make character Zara move along street using arrows
-const zc = zaraCharacter (100, 110)
+// Create the zara-character
+const pc = newPlayableCharacter(100, 110)
 
-// // avoid dogs loss points
+// Create a dog
+const npc = newNonPlayableCharacter(20, 100)
 
-// //collect cat for points click on cats once you approach
-// const catInventory = newInventory()
-// move(catInventory).to(0, 0)
+// dog to move random
 
-move(newImage('assets/blackcat.jpg')).to(100, 250)
-move(newImage('assets/greycat.png')).to(200, 450)
-move(newImage('assets/kitten.png')).to(350, 250)
-move(newImage('assets/orangecat.png')).to(450, 350)
-move(newImage('assets/Siamesecat.jpg')).to(150, 350)
-// // move(newImage('')).to(500, 575)
-// // move(newItem(')).to(500, 555)
-// // move(newItem('')).to(165, 335)
-// // move(newItem('')).to(600, 250)
+async function moveNPC(){
+    await npc.walkNorth(0)
+    await npc.walkEast(100)
+    await npc.walkWest(200)
+    await npc.walkSouth(25)
+    await npc.walkEast(1500)
+    await npc.walkNorth(400)
+    
+}
+moveNPC()
+
+
+// Create the catInventory
+const inventory = newInventory()
+move(inventory).to(0, 0)
+
+// add cats to collect
+move(newImage('assets/rock.png')).to(200, 150)
+move(newImage('assets/rock.png')).to(450, 75)
+move(newImage('assets/rock.png')).to(550, 150)
+move(newImage('assets/rock.png')).to(700, 100)
+move(newItem('assets/greycat.png')).to(950, 75)
+move(newItem('assets/Siamesecat.png')).to(850, 150)
+move(newItem('assets/blackcat.png')).to(600, 50)
+move(newItem('assets/orangecat.png')).to(300, 125)
+move(newItem('assets/kitten.png')).to(500, 125)

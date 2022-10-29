@@ -1,10 +1,10 @@
-function newCat(url){
+function newItem(url){
     let item = newImage(url)
     item.addEventListener('click', () => {
         item.remove()
-        let collectionCat = document.createElement('img')
-        collectionCat.src = url;
-        collection.append(collectionCat)
+        let inventoryItem = document.createElement('img')
+        inventoryItem.src = url;
+        inventory.append(inventoryItem)
     })
-    return cat
+    return item
 }
