@@ -14,7 +14,7 @@ const npc = newNonPlayableCharacter(920, 375)
 // dog to move random
 
 async function moveNPC(){
-    await npc.walkWest(150)
+    await npc.walkWest(50)
     }
 moveNPC()
 

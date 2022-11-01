@@ -8,11 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
         <style>
-            main {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-            }
+            
         </style>
     </head>
     <body>
@@ -27,16 +23,18 @@
         <script src="./zaraMoto.js"></script>
         <script src="./dog.js"></script>
         <script src="./index.js"></script>
+        <script src="/timer.js"></script>
 
         <div>
             <input type="button" style="position: absolute; top: 0; left: 0;" onclick="location.reload(true);"
-                value="Start">
+                value="Click Start">
+                <div class="progressBarDivParent">
+                <div class="progressBarDiv">
+                    <span value="0" max="10" id="progressBar"></span>
+                    </div>
+                </div>
+                <p class="timer">Collect as many cats<span max="10" id="remainingTime"></span> in 10 seconds</p>
             </div>
-            <audio>
-                <source src="game.mp3" type="audio/mpeg">
-                <source src="Bark.mp3" type="audio/mpeg">
-                <source src="Meow.mp3" type="audio/mpeg">
-                Your Browser does not support the audio element
-               </audio>
-</body>
+        
+        </body>
 </html>

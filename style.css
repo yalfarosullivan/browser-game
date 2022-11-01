@@ -3,3 +3,26 @@ body {background-image: url('./assets/background.png');
     background-size: 800px;
     }
 
+main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+.timer{
+    margin: 3rem auto;
+    width: 50%;
+    text-align: right;
+    background-color: grey;
+
+}
+
+.progressBarDivParent {
+    background: #fff;
+    border-radius: 5px;
+}
+.progressBarDiv {
+    background: green;
+    color: #fff;
+    width: 0;
+}
