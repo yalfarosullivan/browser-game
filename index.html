@@ -7,15 +7,13 @@
     <title>Zara the Cat Collector</title>
     <link rel="stylesheet" href="style.css">
 
-        <style>
-            
-        </style>
+        
     </head>
     <body>
         <main>
             <h1>Zara the Cat Collector</h1>
-
         </main>
+        
         <script src="./move.js"></script>
         <script src="./roadBlock.js"></script>
         <script src="./newCat.js"></script>
@@ -28,13 +26,14 @@
         <div>
             <input type="button" style="position: absolute; top: 0; left: 0;" onclick="location.reload(true);"
                 value="Click Start">
-                <div class="progressBarDivParent">
-                <div class="progressBarDiv">
-                    <span value="0" max="10" id="progressBar"></span>
-                    </div>
-                </div>
-                <p class="timer">Collect as many cats<span max="10" id="remainingTime"></span> in 10 seconds</p>
+
             </div>
+            <div>
+                <div class="container">
+                    <p id="timerBegins">Collect all the Cats!</p>
+                         <h1 id="count">10</h1>
+                </div>
+
         
         </body>
 </html>

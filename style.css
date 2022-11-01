@@ -9,20 +9,11 @@ main {
         justify-content: space-evenly;
     }
 
-.timer{
-    margin: 3rem auto;
-    width: 50%;
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.container {
     text-align: right;
-    background-color: grey;
-
-}
-
-.progressBarDivParent {
-    background: #fff;
-    border-radius: 5px;
-}
-.progressBarDiv {
-    background: green;
-    color: #fff;
-    width: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
 }
