@@ -1,7 +1,7 @@
 
 
-function newNonPlayableCharacter(x, y) {
-    let element = newImage('assets/dog.png')
+function nonPlayableDog(x, y) {
+    let element = createImage('assets/dog.png')
     element.style.zIndex = 1;
     
     let direction = null;

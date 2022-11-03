@@ -1,5 +1,6 @@
-function newItem(url){
-    let item = newImage(url)
+function newCat(url, dataAttribute){
+    let item = createImage(url)
+    item.setAttribute('data-id', dataAttribute)
     item.addEventListener('click', () => {
         item.remove()
         let inventoryItem = document.createElement('img')

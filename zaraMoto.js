@@ -1,10 +1,10 @@
-function newPlayableCharacter(x, y) {
-    const element = newImage('assets/zara-character/zarastill.png')
+function zaraCharacter(x, y) {
+    const element = createImage('assets/zara-character/zara.gif')
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
         if (direction === null) {
-            element.src = `assets/zara-character/zarastill.png`
+            element.src = `assets/zara-character/zara.gif`
         }
         if (direction === 'west') {
             element.src = `assets/zara-character/zara.gif`
