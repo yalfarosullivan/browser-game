@@ -1,4 +1,4 @@
-function newCat(url, dataAttribute){
+function collectCat(url, dataAttribute){
     let item = createImage(url)
     item.setAttribute('data-id', dataAttribute)
     item.addEventListener('click', () => {

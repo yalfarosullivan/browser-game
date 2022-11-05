@@ -10,6 +10,6 @@ setInterval( function(){
     }
 
     if (counter === 0){
-        id.innerHTML= "FINISH";
+        id.innerHTML= "TIME'S UP";
     }
 }, 1000);

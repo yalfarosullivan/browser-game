@@ -1,35 +1,30 @@
 
 
-// Create Points
-
-//Music
-
-// Create zara-character
-const zc = zaraCharacter(0, 375)
-
-// Create a dog
-const npd = nonPlayableDog(920, 375)
-
-
-// dog to move toward character
-
-async function moveNPD(){
-    await npd.walkWest(50)
-    }
-moveNPD()
-
-
 // Create the catInventory
-const inventory = newInventory()
-move(inventory).to(0, 0)
+// const inventory = newInventory()
+// move(inventory).to(0, 0)
 
-// add cats to collect and rocks
-move(createImage('assets/rock.png')).to(150, 350)
-move(createImage('assets/rock.png')).to(250, 255)
-move(createImage('assets/rock.png')).to(550, 150)
-move(createImage('assets/rock.png')).to(700, 300)
-move(newCat('assets/greycat.png', 'greyCat')).to(950, 75)
-move(newCat('assets/Siamesecat.png', 'siameseCat')).to(750, 250)
-move(newCat('assets/blackcat.png', 'blackCat')).to(625, 50)
-move(newCat('assets/orangecat.png', 'orangeCat')).to(300, 125)
-move(newCat('assets/kitten.png', 'kitten')).to(500, 325)
+// add cats to collect 
+
+gather(collectCat('assets/Siamesecat.png', 'siameseCat')).to(750, 220)
+gather(collectCat('assets/Siamesecat.png', 'siameseCat')).to(650, 350)
+gather(collectCat('assets/Siamesecat.png', 'siameseCat')).to(850, 120)
+gather(collectCat('assets/Siamesecat.png', 'siameseCat')).to(350, 90)
+gather(collectCat('assets/blackcat.png', 'blackCat')).to(825, 150)
+gather(collectCat('assets/blackcat.png', 'blackCat')).to(925, 250)
+gather(collectCat('assets/blackcat.png', 'blackCat')).to(725, 350)
+gather(collectCat('assets/blackcat.png', 'blackCat')).to(625, 170)
+gather(collectCat('assets/blackcat.png', 'blackCat')).to(525, 270)
+gather(collectCat('assets/blackcat.png', 'blackCat')).to(425, 300)
+gather(collectCat('assets/orangecat.png', 'orangeCat')).to(600, 125)
+gather(collectCat('assets/orangecat.png', 'orangeCat')).to(500, 225)
+gather(collectCat('assets/orangecat.png', 'orangeCat')).to(400, 325)
+gather(collectCat('assets/orangecat.png', 'orangeCat')).to(300, 90)
+gather(collectCat('assets/orangecat.png', 'orangeCat')).to(200, 25)
+gather(collectCat('assets/orangecat.png', 'orangeCat')).to(100, 125)
+gather(collectCat('assets/kitten.png', 'kitten')).to(500, 325)
+gather(collectCat('assets/kitten.png', 'kitten')).to(200, 75)
+gather(collectCat('assets/kitten.png', 'kitten')).to(100, 80)
+gather(collectCat('assets/kitten.png', 'kitten')).to(300, 325)
+gather(collectCat('assets/kitten.png', 'kitten')).to(400, 225)
+gather(collectCat('assets/kitten.png', 'kitten')).to(600, 125)

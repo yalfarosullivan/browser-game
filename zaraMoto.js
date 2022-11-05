@@ -1,4 +1,4 @@
-function zaraCharacter(x, y) {
+function newPlayableCharacter(x, y) {
     const element = createImage('assets/zara-character/zara.gif')
     element.style.zIndex = 1;
 
