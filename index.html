@@ -1,29 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zara the Cat Collector</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="wrapper">
-    <div class ="stats-container">
-      <div id="moves-count"></div>
-      <div id="time"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zara the Cat Collector</title>
+  <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="game">
+    <header>
+      <h1 class="text-center mt-4 mb-2 headTag">Zara the Cat Collector</h1>
+    </header>
 
-    </div>
-    <div class="game-container"></div>
-    <button id="stop" class="hide">Stop Game</button>
-  </div>
-  <div class="controls-container">
-    <p id="result"></p>
-    <button id="start">Start Game</button>
+    <section class="container mx-auto">
+      <section class="mx-auto">
+        <div class="row">
+          <div class="col-12 text-center points">
+            <p>Cats Collected: <span id="point"> 0</span></p>
+          </div>
+        </div>
 
-  </div>
+        <div id="won" class="text-center">
+          <h1>All cats have been collected!</h1>
+          <p>Cats Collected: <span id="finalPoints">0</span></p>
+          <button class="btn" id="playAgain">Collect more cats?</button>
+        </div>
 
+        <section class="memory-game">
+          <div class="memory-card" data-cards="card1">
+            <img class="front-face" src="Images/blackcat.png" alt="blackcat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+          <div class="memory-card" data-cards="card1">
+            <img class="front-face" src="Images/blackcat.png" alt="blackcat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <div class="memory-card" data-cards="card2">
+            <img class="front-face" src="Images/greycat.png" alt="greycat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+          <div class="memory-card" data-cards="card2">
+            <img class="front-face" src="Images/greycat.png" alt="greycat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+
+          <div class="memory-card" data-cards="card3">
+            <img class="front-face" src="Images/kitten.png" alt="kitten" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+          <div class="memory-card" data-cards="card3">
+            <img class="front-face" src="Images/kitten.png" alt="kitten" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+
+          <div class="memory-card" data-cards="card4">
+            <img class="front-face" src="Images/orangecat.png" alt="orangecat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+          <div class="memory-card" data-cards="card4">
+            <img class="front-face" src="Images/orangecat.png" alt="orangecat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+
+          <div class="memory-card" data-cards="card5">
+            <img class="front-face" src="Images/siamesecat.png" alt="siamesecat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+          <div class="memory-card" data-cards="card5">
+            <img class="front-face" src="Images/siamesecat.png" alt="siamesecat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+
+          <div class="memory-card" data-cards="card6">
+            <img class="front-face" src="Images/calicocat.png" alt="calicocat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+          <div class="memory-card" data-cards="card6">
+            <img class="front-face" src="Images/calicocat.png" alt="calicocat" />
+            <img class="back-face" src="Images/home.png" alt="house" />
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
