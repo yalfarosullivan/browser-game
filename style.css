@@ -21,3 +21,8 @@ body {
   border-radius: 0.6em;
   box-shadow: 0 0.9em 2.8em grey;
 }
+.game-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+}
