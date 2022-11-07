@@ -41,6 +41,7 @@ function checkCards() {
   isMatch ? cardsMatch() : cardsDontMatch();
 }
 
+//when cards match point info
 function cardsMatch() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
