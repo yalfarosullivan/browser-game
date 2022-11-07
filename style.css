@@ -1,19 +1,23 @@
-body {background-image: url('./assets/background.png');
-    background-repeat: repeat-x;
-    background-size: 1000px;
-    }
-
-main {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-div.container {
-    text-align: right;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
+
+body {
+  background-color:black;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: 26.87em;
+  padding: 2.5em 3em;
+  background-color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 0.6em;
+  box-shadow: 0 0.9em 2.8em grey;
 }

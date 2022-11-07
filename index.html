@@ -1,95 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zara the Cat Collector</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara the Cat Collector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class ="stats-container">
+      <div id="moves-count"></div>
+      <div id="time"></div>
 
-        
-    </head>
-    <body>
-        <main>
-            <h1>Zara the Cat Collector</h1>
-        </main>
-        
-        <script src="./script.js"></script>
-       
+    </div>
+    <div class="game-container"></div>
+    <button id="stop" class="hide">Stop Game</button>
+  </div>
 
-        <div>
-            <input type="button" style="position: absolute; top: 0; left: 0;" onclick="location.reload(true);"
-                value="Start">
 
-            </div>
-            <div>
-                <div class="container">
-                    <p id="timerBegins">Collect all the Cats!</p>
-                         <h1 id="count">30</h1>
-                </div>
-
-        <img id="zara" src="/assets/Zara-Character/Zara.gif" alt="Girl on moped">
-
-        <section class="all-cards">
-            <div class="cards-to-match">
-              <img class="front-of-card" src="./assets/blackcat.png" alt="Black Cat">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="cards-to-match">
-              <img class="front-of-card" src="./assets/blackcat.png" alt="Black Cat">
-              <img class="back-of-card" src="./assets/back-of-card.png alt="Back Card">
-            </div>
-          
-            <div class="cards-to-match">
-              <img class="front-of-card" src="./assets/greycat.png" alt="Grey Cat">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="cards-to-match">
-              <img class="front-of-card" src="./assets/greycat.png" alt="Grey Cat">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="cards-to-match">
-              <img class="front-of-card" src="./assets/kitten.png" alt="Kitten">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card>
-            </div>
-          
-            <div class="cards-to-match">
-              <img class="front-of-card" src="./assets/kitten.png" alt="Kitten">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="cards-to-match">
-              <img class="front-of-card-" src="./assets/orangecat.png" alt="Orange Cat">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="cards-to-match">
-              <img class="front-of-card" src="./assets/orangecat.png" alt="Orange Cat">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="memory-card">
-              <img class="front-face" src="./assets/Siamesecat.png" alt="Siamesecat">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="memory-card">
-              <img class="front-face" src="./assets/Siamesecat.png" alt="Siamesecat">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="memory-card">
-              <img class="front-face" src="./assets/bluecat.png" alt="Blue Cat">
-              <img class="back-of-card" src="./assets/back-of-card.png" alt="Back Card">
-            </div>
-          
-            <div class="memory-card">
-              <img class="front-face" src="./assets/bluecat.png" alt="Blue Cat">
-              <img class="back-face" src="./assets/back-of-card.png" alt="Cat Card">
-            </div>
-          </section>
-        </body>
+  <script src="script.js"></script>
+</body>
 </html>
