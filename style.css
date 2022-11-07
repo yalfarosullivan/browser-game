@@ -37,10 +37,11 @@ body {
 .btn-handle {
   border: 2px solid yellow;
   color: black;
+  background-image: linear-gradient(-225deg, #213038 0%, #b1c1b1 100%);
 }
 
 .btn-handle:hover {
-  background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
+  background: #fafcfc;
 }
 
 .headTag,
@@ -72,7 +73,7 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.5s;
   border-radius: 5px;
-  background-image: linear-gradient(-225deg, #76c3f0 0%, #2580b3 100%);
+  background-image: linear-gradient(-225deg, #213038 0%, #b1c1b1 100%);
 }
 
 .memory-card:active {
@@ -101,8 +102,7 @@ body {
 #won {
   visibility: hidden;
   border-radius: 10px;
-  background: #ffbdf1;
-  background-image: linear-gradient(to bottom, #76c3f0 0%, #2580b3 100%);
+  background: #ffffff;
   margin: auto;
   position: absolute;
   top: 50%;
@@ -110,7 +110,8 @@ body {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  border: 5px solid #064d75;
+  border: 5px solid #050505;
+  background-image: linear-gradient(-225deg, #213038 0%, #b1c1b1 100%);
 }
 
 #won > h1,
@@ -119,14 +120,15 @@ body {
 }
 
 #playAgain {
-  border: 2px solid #2580b3;
+  border: 2px solid #000000;
   border-radius: 5px;
-  background: #2580b3;
+  background: #ffffff;
+  
 }
 
 #playAgain:hover {
-  border: 2px solid #064d75;
-  background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
+  border: 2px solid #ffffff;
+  background-image: linear-gradient(-225deg, #213038 0%, #b1c1b1 100%);
 }
 
 
