@@ -13,38 +13,7 @@ body {
   position: relative;
 }
 
-.open {
-  width: (100%);
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
 
-.mainTag {
-  color: black;
-  font-weight: bolder;
-}
-
-.welcome {
-  color: black;
-  font-weight: 800;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 20px;
-}
-
-.btn-handle {
-  border: 2px solid yellow;
-  color: black;
-  background-image: linear-gradient(-225deg, #213038 0%, #b1c1b1 100%);
-}
-
-.btn-handle:hover {
-  background: #fafcfc;
-}
-
-.headTag,
 .points > p {
   color: black;
   font-weight: bolder;
@@ -73,7 +42,6 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.5s;
   border-radius: 5px;
-  background-image: linear-gradient(-225deg, #213038 0%, #b1c1b1 100%);
 }
 
 .memory-card:active {
@@ -111,7 +79,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
   border: 5px solid #050505;
-  background-image: linear-gradient(-225deg, #213038 0%, #b1c1b1 100%);
+  background: #b1c1b1;
 }
 
 #won > h1,
@@ -127,27 +95,12 @@ body {
 }
 
 #playAgain:hover {
-  border: 2px solid #ffffff;
-  background-image: linear-gradient(-225deg, #213038 0%, #b1c1b1 100%);
+  background: #07c007;
 }
 
 
 @media (min-width: 992px) {
-  .mainTag {
-    font-size: 80px;
-    margin-top: 60px;
-  }
-
-  .welcome {
-    font-size: 35px;
-  }
-
-  .btn-handle {
-    font-size: 40px;
-    padding: 10px 20px;
-    border-radius: 10px;
-  }
-
+ 
   .memory-game {
     width: 640px;
     height: 530px;
@@ -160,17 +113,7 @@ body {
     padding: 50px;
   }
 
-  .headTag {
-    font-size: 70px;
-  }
-
-  .points > p,
-  #won > h1,
-  #won p,
-  #playAgain {
-    font-size: 35px;
-  }
-}
+  
 
 
 
