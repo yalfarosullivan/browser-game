@@ -40,6 +40,7 @@ function checkCards() {
 }
 
 //create when cards match point info
+//adding points to html from Scaler https://www.scaler.com/topics/innerhtml-in-javascript/
 function cardsMatch() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
@@ -88,6 +89,7 @@ play.addEventListener("click", playAgain);
 
 //Create Random Shuffle
 
+//From MDM https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 (function shuffle() {
   cards.forEach((card) => {
     let randomPos = Math.floor(Math.random() * 12);

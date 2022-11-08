@@ -5,7 +5,6 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
 body {
   height: 1000;
   background-image: url("./images/background.png");
@@ -95,9 +94,6 @@ body {
   background: #07c007;
 }
 
-#moto{
-
-}
 
 
 @media (min-width: 992px) {
