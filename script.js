@@ -3,7 +3,7 @@ const score = document.getElementById("point");
 const finalScore = document.getElementById("finalPoints");
 const won = document.getElementById("won");
 const play = document.getElementById("playAgain");
-const body = document.getElementsByTagName("body")[0];
+
 
 var points = 0;
 var finalPoint = 0;
