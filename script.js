@@ -13,7 +13,7 @@ let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
 
-//filp card function
+//create Filp card function
 
 function flipCard() {
   if (lockBoard) return;
@@ -32,14 +32,14 @@ function flipCard() {
   checkCards();
 }
 
-//verify matches
+//create verify matches
 function checkCards() {
   let isMatch = firstCard.dataset.cards === secondCard.dataset.cards;
 
   isMatch ? cardsMatch() : cardsDontMatch();
 }
 
-//when cards match point info
+//create when cards match point info
 function cardsMatch() {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
@@ -57,7 +57,7 @@ function cardsMatch() {
   resetBoard();
 }
 
-//When cards dont match
+//create When cards dont match
 function cardsDontMatch() {
   lockBoard = true;
 
@@ -78,7 +78,7 @@ function resetBoard() {
   [firstCard, secondCard] = [null, null];
 }
 
-//Play again
+//create Play again
 
 function playAgain() {
   location.reload();
@@ -86,7 +86,7 @@ function playAgain() {
 
 play.addEventListener("click", playAgain);
 
-//Random Shuffle
+//Create Random Shuffle
 
 (function shuffle() {
   cards.forEach((card) => {
