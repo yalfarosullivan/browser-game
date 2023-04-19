@@ -1,0 +1,14 @@
+// @forward "utilities";
+@import "utilities";
+@import "config";
+
+
+@mixin button-style($border, $secondarycolor, $hover-bg) {
+    border: $border;
+    border-radius: 5px;
+    background: $secondarycolor;
+  
+    &:hover {
+      background: $hover-bg;
+    }
+  }

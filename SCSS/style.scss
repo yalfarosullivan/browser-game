@@ -1,0 +1,97 @@
+@import "btnConfig";
+@import "utilities";
+@import "config";
+
+//basic styling
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font;
+  }
+  
+  body {
+    height: 1000px;
+    background-image: url("./images/background.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .points {
+    > p {
+      color: $primary-color;
+      font-weight: $weight;
+    }
+  }
+  
+  #point {
+    font-weight: font-weight('bolder');
+  }
+  
+  .memory-game {
+    @include card-size(25, 20);
+    @include center-position;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  
+    @media (min-width: 992px) {
+      width: 640px;
+      height: 530px;
+    }
+  }
+  
+  .memory-card {
+    @include card-size(25, 30);
+    margin: $card-margin;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform $card-transition;
+  
+    &:active {
+      transform: scale(0.97);
+      transition: transform 0.2s;
+    }
+  
+    &.flip {
+      transform: card-transform(180);
+    }
+  }
+  
+  .front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    border-radius: $card-radius;
+    backface-visibility: hidden;
+  }
+  
+  .front-face {
+    transform: card-transform(180);
+  }
+  
+  #won {
+    @include center-position;
+    z-index: 1;
+    background: $secondary-color;
+    visibility: hidden;
+    border-radius: 10px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  
+    @media (min-width: 992px) {
+      padding: 50px;
+    }
+  
+    > h1, p {
+      font-weight: font-weight('bolder');
+    }
+  }
+  

@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  height: 1000px;
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.points > p {
+  color: #000000;
+  font-weight: "bolder";
+}
+
+#point {
+  font-weight: 1300;
+}
+
+.memory-game {
+  width: calc(25% - 10pxpx);
+  height: calc(20% - 10pxpx);
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+@media (min-width: 992px) {
+  .memory-game {
+    width: 640px;
+    height: 530px;
+  }
+}
+
+.memory-card {
+  width: calc(25% - 10pxpx);
+  height: calc(30% - 10pxpx);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face, .back-face {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+#won {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background: #ffffff;
+  visibility: hidden;
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  #won {
+    padding: 50px;
+  }
+}
+#won > h1, #won p {
+  font-weight: 1300;
+}
+
+/*# sourceMappingURL=style.css.map */

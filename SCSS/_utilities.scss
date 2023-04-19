@@ -1,0 +1,30 @@
+
+@function font-weight($weight) {
+    @if $weight == 'bolder' {
+      @return 1300;
+    } @else {
+      @return $weight;
+    }
+  }
+  
+  @function card-transform($degree) {
+    @return unquote('rotateY(#{$degree}deg)');
+  }
+  
+
+@mixin center-position {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin card-size($width, $height) {
+    width: calc(#{$width}% - #{$card-margin * 2}px);
+    height: calc(#{$height}% - #{$card-margin * 2}px);
+  }
+  
+ 
+
+  
