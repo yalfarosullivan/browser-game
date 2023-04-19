@@ -1,0 +1,21 @@
+{
+  "name": "browser-game",
+  "version": "1.0.0",
+  "description": "This is a memory match Browser game, created for the University of Nevada Las Vegas, Software Development programe through TriveDX. The inspiration for my game was my daugther and her name is Zara and she loves cats! She has 5, so why not create a game she can match and collect more cats.",
+  "main": "script.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yalfarosullivan/browser-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yalfarosullivan/browser-game/issues"
+  },
+  "homepage": "https://github.com/yalfarosullivan/browser-game#readme"
+}

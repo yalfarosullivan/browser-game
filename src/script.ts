@@ -1,3 +1,5 @@
+
+
 const cards = document.querySelectorAll(".memory-card");
 const score = document.getElementById("point");
 const finalScore = document.getElementById("finalPoints");
@@ -11,11 +13,11 @@ var win = 0;
 
 let hasFlippedCard = false;
 let lockBoard = false;
-let firstCard, secondCard;
+let firstCard: { dataset: { cards: any; }; removeEventListener: (arg0: string, arg1: () => void) => void; classList: { remove: (arg0: string) => void; }; }, secondCard: { dataset: { cards: any; }; removeEventListener: (arg0: string, arg1: () => void) => void; classList: { remove: (arg0: string) => void; }; };
 
 //create Filp card function
 
-function flipCard() {
+function flipCard(this: any) {
   if (lockBoard) return;
   if (this === firstCard) return;
 
